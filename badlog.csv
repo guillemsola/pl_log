@@ -1,0 +1,82 @@
+"23/09/2014, 07:15:06:840";"Info";">> Begin execution step: 1535D47AB0A54A798EFBA3AF009863E8; with order: 6";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"F334CBBDDF614272A397A3AF0098686D"
+"23/09/2014, 07:15:06:863";"Debug";"Command: F95EEC9507634BC398EE90A5630D54EE; Name: Link to NPrS";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"35407AEDE9194C77AA31A3AF00986877"
+"23/09/2014, 07:15:06:878";"Debug";"Registering parameters for step 1535D47AB0A54A798EFBA3AF009863E8";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"A0AC150904434845AC86A3AF0098687B"
+"23/09/2014, 07:15:06:887";"Trace";"Set default parameter: pipeline_id; with value: 6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"F07AFB5F38124631AAC5A3AF0098687B"
+"23/09/2014, 07:15:06:898";"Trace";"Set default parameter: tid; with value: 999049";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"E5FF772FE9204FD3A4A2A3AF00986880"
+"23/09/2014, 07:15:06:907";"Trace";"Set default parameter: side; with value: Platform";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"4D9F252A57AE4FA28EEFA3AF00986880"
+"23/09/2014, 07:15:06:916";"Trace";"Set default parameter: file_id; with value: 94F9611BD2134B6487C750C9B6FE734C";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"822BD5E299FB4618899FA3AF00986885"
+"23/09/2014, 07:15:06:926";"Trace";"Set default parameter: file_path; with value: \\STP026\Webbyfiles\folders\999049\output\rejected\20140923";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"8B6FD548F8174DE58817A3AF0098688A"
+"23/09/2014, 07:15:06:934";"Trace";"Set default parameter: file_name; with value: P_SLP_730901_20140901_20140930_00_V2_0000_00000_FILE_NOE_730901_Hoya_Finalauswertungen_09_2014.zip";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"9F03483CFA9545AC84C0A3AF0098688A"
+"23/09/2014, 07:15:06:948";"Trace";"Set default parameter: file_type_id; with value: SLP";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"C1B144EC34B240949181A3AF0098688E"
+"23/09/2014, 07:15:06:964";"Trace";"Set default parameter: container_type_id; with value: FILE";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"13DD7E1958DF4DA5A303A3AF00986893"
+"23/09/2014, 07:15:06:980";"Trace";"Set default parameter: transmission_mode; with value: 1";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"DF4F33FF07F041A68430A3AF00986898"
+"23/09/2014, 07:15:07:001";"Trace";"Set parameter: nprs_api_action; with value: NewFile";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"5DB9EAEC3D434F6D9AE1A3AF0098689C"
+"23/09/2014, 07:15:07:038";"Trace";"Resolving parameter: nprs_api_newfile_pattern; with value: filecommunication/newfile/{0}/{1};";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"86FF021CF0CF4AAFB2FFA3AF009868AA"
+"23/09/2014, 07:15:07:048";"Trace";"Set parameter: nprs_api_newfile_pattern; with value: filecommunication/newfile/{0}/{1}";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"5B1ECA6E42B544F5B586A3AF009868AA"
+"23/09/2014, 07:15:07:061";"Trace";"Set parameter: nprs_api_verb2; with value: PUT";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"1280871C2BE54AE3B601A3AF009868AF"
+"23/09/2014, 07:15:07:093";"Trace";"Resolving parameter: nprs_api_erroraction_pattern; with value: filecommunication/erroraction/{0}/{1}/{2};";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"5FDDDC8C7C2247FF806FA3AF009868B8"
+"23/09/2014, 07:15:07:107";"Trace";"Set parameter: nprs_api_erroraction_pattern; with value: filecommunication/erroraction/{0}/{1}/{2}";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"CCB6806309E142E49429A3AF009868BD"
+"23/09/2014, 07:15:07:117";"Trace";"Set parameter: nprs_api_action2; with value: InternalError";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"360EF47A300E45E697E0A3AF009868C2"
+"23/09/2014, 07:15:07:149";"Trace";"Resolving parameter: nprs_api_url; with value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"3AD648D4A6E44BA4A7C1A3AF009868CB"
+"23/09/2014, 07:15:07:159";"Trace";"Set parameter: nprs_api_url; with value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"C9B07491163D4D7F9CBAA3AF009868D0"
+"23/09/2014, 07:15:07:167";"Trace";"Set parameter: nprs_api_verb; with value: POST";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"7EBE52DB7D1E4F30A215A3AF009868D0"
+"23/09/2014, 07:15:07:190";"Trace";"Resolving parameter: file_name; with value: P_SLP_730901_20140901_20140930_00_V2_0000_00000_FILE_NOE_730901_Hoya_Finalauswertungen_09_2014.zip;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"303EEB3C0C1C4ABABE2AA3AF009868D9"
+"23/09/2014, 07:15:07:201";"Trace";"Resolving parameter: file_path; with value: \\STP026\Webbyfiles\folders\999049\output\rejected\20140923;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"C7D2DD41EB6E48269694A3AF009868D9"
+"23/09/2014, 07:15:07:212";"Trace";"Resolving parameter: file_type_id; with value: SLP;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"C4B6A54189654451A890A3AF009868DE"
+"23/09/2014, 07:15:07:218";"Trace";"Get execution parameter: nprs_api_workflow_name; Value: ";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"416247EAFF1C4CBFA264A3AF009868DE"
+"23/09/2014, 07:15:07:238";"Trace";"Resolving parameter: file_type_id; with value: SLP;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"BC2295529A454FD399CEA3AF009868E7"
+"23/09/2014, 07:15:07:258";"Trace";"Get execution parameter: nprs_api_workflow_name; Value: ";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"392560C783FD46A2A0ACA3AF009868EC"
+"23/09/2014, 07:15:07:280";"Info";"Adding ApiWorkflowName to ExecutionParameters with value: SLP";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"151F2BA24F9F4263AD8EA3AF009868F1"
+"23/09/2014, 07:15:07:291";"Trace";"Resolving parameter: nprs_api_action; with value: NewFile;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"12F4B2B4BCA54660932FA3AF009868F5"
+"23/09/2014, 07:15:07:300";"Trace";"Resolving parameter: nprs_api_verb; with value: POST;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"7FAC2A34A2B04E6D8A0AA3AF009868FA"
+"23/09/2014, 07:15:07:311";"Trace";"Get execution parameter: cuid; Value: 005716";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"6BB5868AF9814BB49037A3AF009868FA"
+"23/09/2014, 07:15:07:313";"Trace";"Resolving execution parameter: cuid; with value: 005716;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"88A44B8023C049DAAFCDA3AF009868FA"
+"23/09/2014, 07:15:07:321";"Trace";"Get execution parameter: use_system_user; Value: ";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"532142AE1B5B498387D9A3AF009868FF"
+"23/09/2014, 07:15:07:328";"Trace";"Resolving parameter: nprs_api_url; with value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"73D6330A7EF647E19B47A3AF009868FF"
+"23/09/2014, 07:15:07:344";"Trace";"Resolving parameter: nprs_api_newfile_pattern; with value: filecommunication/newfile/{0}/{1};";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"6BC1D654590442529753A3AF00986903"
+"23/09/2014, 07:15:07:368";"Trace";"Doing a 'POST' call with url 'http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/filecommunication/newfile/6EBDDA04C3B14F74AFD5B4FB11A3FB2E/SLP' and json '{""Cuid"":""005716"",""Side"":""Platform"",""FileName"":""\\\\STP026\\Webbyfiles\\folders\\999049\\output\\rejected\\20140923\\P_SLP_730901_20140901_20140930_00_V2_0000_00000_FILE_NOE_730901_Hoya_Finalauswertungen_09_2014.zip"",""CorrelationId"":""F8EBBB015E354332BC798074072DF2E0""}'";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"07DAE61998364EB186F5A3AF0098690D"
+";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"C109F32ABF3F41DAA089A3AF0098692E"
+
+
+X-AspNet-Version: 4.0.30319
+Server: Microsoft-IIS/7.5
+Expires: -1,-1
+Date: Tue, 23 Sep 2014 07:14:54 GMT
+Cache-Control: no-cache,no-cache
+Content-Length: 0
+X-UA-Compatible: IE=edge
+Pragma: no-cache
+"23/09/2014, 07:15:07:487";"Trace";"Status code: 200 OK
+"23/09/2014, 07:15:07:499";"Trace";"Get execution parameter: nprs_api_workflow_name2; Value: ";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"D1FFAE43B57D411A8175A3AF00986932"
+"23/09/2014, 07:15:07:508";"Trace";"Resolving parameter: file_type_id; with value: SLP;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"78540656108C472F8131A3AF00986937"
+"23/09/2014, 07:15:07:513";"Trace";"Get execution parameter: nprs_api_workflow_name2; Value: ";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"6A8255D973B549B784D6A3AF00986937"
+"23/09/2014, 07:15:07:521";"Info";"Adding ApiWorkflowName2 to ExecutionParameters with value: SLP";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"32A215EE72AB4EEAAC09A3AF0098693C"
+"23/09/2014, 07:15:07:530";"Trace";"Resolving parameter: nprs_api_action2; with value: InternalError;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"DB658582CA954A1ABA4EA3AF0098693C"
+"23/09/2014, 07:15:07:539";"Trace";"Resolving parameter: nprs_api_verb2; with value: PUT;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"285E0EA7D3674369BE7FA3AF00986940"
+"23/09/2014, 07:15:07:551";"Trace";"Get execution parameter: stop_on_manage_errors; Value: 1";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"C31B6245CFA946B39638A3AF00986945"
+"23/09/2014, 07:15:07:556";"Trace";"Get execution parameter: naming_convention_error; Value: 1";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"3F5E69EB84C4400B87C8A3AF00986945"
+"23/09/2014, 07:15:07:574";"Trace";"Get execution parameter: use_system_user; Value: ";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"368015B7C1B8458EBCC2A3AF0098694A"
+"23/09/2014, 07:15:07:587";"Trace";"Resolving parameter: nprs_api_url; with value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/;";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"CCCC472BC6D041428369A3AF0098694E"
+"23/09/2014, 07:15:07:595";"Trace";"Resolving parameter: nprs_api_erroraction_pattern; with value: filecommunication/erroraction/{0}/{1}/{2};";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"4F471851CA404165BFDEA3AF0098694E"
+"23/09/2014, 07:15:07:601";"Trace";"Doing a 'PUT' call with url 'http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/filecommunication/erroraction/6EBDDA04C3B14F74AFD5B4FB11A3FB2E/SLP/NamingConventionError' and json '{""CorrelationId"":""F8EBBB015E354332BC798074072DF2E0""}'";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"B9AB7A28A21D4C9AA7ECA3AF00986953"
+";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"C157DA2E131142FBA182A3AF009869F2"
+
+
+X-AspNet-Version: 4.0.30319
+Server: Microsoft-IIS/7.5
+Expires: -1,-1
+Date: Tue, 23 Sep 2014 07:14:54 GMT
+Cache-Control: no-cache,no-cache
+Content-Length: 0
+X-UA-Compatible: IE=edge
+Pragma: no-cache
+"23/09/2014, 07:15:08:141";"Trace";"Status code: 200 OK
+"23/09/2014, 07:15:08:177";"Trace";"Set execution parameter: nprs_api_workflow_name; Value: SLP";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"54C4E37E1AF8481CBA6AA3AF00986A01"
+"23/09/2014, 07:15:08:201";"Trace";"Set execution parameter: out_nprs_api_action_result; Value: True";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"3A2D76F0482D490889C8A3AF00986A05"
+"23/09/2014, 07:15:08:236";"Trace";"Set execution parameter: out_nprs_api_action_url; Value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/filecommunication/newfile/6EBDDA04C3B14F74AFD5B4FB11A3FB2E/SLP";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"0F4F494F3A264F3CAB5DA3AF00986A0F"
+"23/09/2014, 07:15:08:268";"Trace";"Set execution parameter: out_nprs_api_action_json; Value: {""Cuid"":""005716"",""Side"":""Platform"",""FileName"":""\\\\STP026\\Webbyfiles\\folders\\999049\\output\\rejected\\20140923\\P_SLP_730901_20140901_20140930_00_V2_0000_00000_FILE_NOE_730901_Hoya_Finalauswertungen_09_2014.zip"",""CorrelationId"":""F8EBBB015E354332BC798074072DF2E0""}";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"9A1BDA2998B64317BC4CA3AF00986A18"
+"23/09/2014, 07:15:08:295";"Trace";"Set execution parameter: nprs_api_workflow_name2; Value: SLP";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"75A8587808A04A049B95A3AF00986A21"
+"23/09/2014, 07:15:08:323";"Trace";"Set execution parameter: out_nprs_api_action_result2; Value: True";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"2794142AE51246D28FF2A3AF00986A2B"
+"23/09/2014, 07:15:08:405";"Trace";"Set execution parameter: out_nprs_api_action_url2; Value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/filecommunication/erroraction/6EBDDA04C3B14F74AFD5B4FB11A3FB2E/SLP/NamingConventionError";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"F56FCBAE987E467C8530A3AF00986A42"
+"23/09/2014, 07:15:08:425";"Trace";"Set execution parameter: out_nprs_api_action_json2; Value: {""CorrelationId"":""F8EBBB015E354332BC798074072DF2E0""}";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"A857D2313AAE44B4AD4CA3AF00986A4C"
+"23/09/2014, 07:15:08:438";"Info";"End step 6 execution successfully";"";"Technical";"6EBDDA04C3B14F74AFD5B4FB11A3FB2E";"04EB29A79C474CF6896DA3AF00986A4C"
