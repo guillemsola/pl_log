@@ -5,14 +5,32 @@ plLog.controller('ProductionLineController', function($scope, $http) {
 	$http.get('/log').
 	success(function(data) {
 		$scope.data = data;
-	});
+		$scope.runningTotal = (function xyz() {
+			$scope.data.start = parseDate(data.start);
+			$scope.data.end = parseDate(data.end);
+			return Math.abs($scope.data.end - $scope.data.start);
 
-	$scope.someFunction = function(index) {
-		var date = $scope.data.steps[index].start.split( /[\/(, ):]/g );
-		var startDate = new Date(date[2],date[1]-1,date[0],date[4],date[5],date[6],date[7]);
-		date = $scope.data.steps[index].end.split( /[\/(, ):]/g );
-		var endDate = new Date(date[2],date[1]-1,date[0],date[4],date[5],date[6],date[7]);
-		$scope.data.steps[index].runningTime = Math.abs(endDate - startDate);
+
+			})();
+		// $scope.data.endCent = percentage($scope.data.end);
+		// $scope.data.startCent = percentage($scope.data.start);
+		$scope.runningTotalCent = 100;
+		});
+
+	$scope.initializeState = function(step) {
+		var startDate = parseDate(step.start);
+		var endDate = parseDate(step.end);
+		step.runningTimeCent = percentage(Math.abs(endDate - startDate));
+		step.offsetTimeCent = percentage(Math.abs($scope.data.start - startDate));
+	};
+
+	function percentage(value) {
+		return ( value * 100) / $scope.runningTotal;
+	};
+
+	function parseDate(date) {
+		var fields = date.split( /[\/(, ):]/g );
+		return new Date(fields[2],fields[1]-1,fields[0],fields[4],fields[5],fields[6],fields[7])
 	};
 });
 /*

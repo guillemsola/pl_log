@@ -7,18 +7,21 @@
 		<script src="app/scripts/filters/highlight.js"></script>	
 		<script src="app/scripts/directives/directives.js"></script>	
 		<script src="app/scripts/lib/moment.min.js"></script>
-		<link rel="stylesheet" type="css" href="css/pipeline.css">
+		<link rel="stylesheet" type="text/css" href="css/pipeline.css">
 	</head>
 	<body ng-controller="ProductionLineController">
 		<h1>{{ data.pipeline }}</h1>
+		<h2>{{ data.fileName }}</h2>
 		<!-- <ul> -->
 		<div id="pipeline">
-			<div ng-repeat="step in data.steps track by $index" class="step forward" ng-class="{error: step.hasError, not_last : !$last}" ng-init="someFunction($index)">
+			<div ng-repeat="step in data.steps track by $index" class="step forward" ng-class="{error: step.hasError, not_last : !$last}" ng-init="initializeState(step)">
 			<a href="javascript:void(0);" ng-click="showDetails = ! showDetails">
 			<!-- <div class="floater"> -->
 				<div class="command">{{ step.command }}</div>
-				<div class="running_time">{{ step.runningTime }} msec</div>
-				
+				<div class="total_progress">
+					<div class="progress" style="width:{{ step.runningTimeCent }}%; margin-left: {{ step.offsetTimeCent }}%"></div>
+				</div>
+				<!-- {{ step.runningTimeCent }} / {{ step.offsetTimeCent }} / {{ runningTotalCent }} -->
 				<div class="log" ng-class="{ 'hidden': ! showDetails}">
 					<ul>
 						<li ng-repeat="message in step.messages track by $index" in-Yellow>
@@ -30,10 +33,13 @@
 			<!-- </div> -->
 			</div>
 			<!-- Rollback -->
-			<div ng-repeat="step in data.rollbackSteps track by $index" class="step rollback not_last" ng-class="{error: step.hasError}">
+			<div ng-repeat="step in data.rollbackSteps track by $index" class="step rollback not_last" ng-class="{error: step.hasError}" ng-init="initializeState(step)">
 			<a href="javascript:void(0);" ng-click="showDetails = ! showDetails">
 			<!-- <div class="floater"> -->
 				<div class="command">{{ step.command }}</div>
+				<div class="total_progress">
+					<div class="progress" style="width:{{ step.runningTimeCent }}%; margin-left: {{ step.offsetTimeCent }}%"></div>
+				</div>
 				<div class="log" ng-class="{ 'hidden': ! showDetails}">
 					<ul>
 						<li ng-repeat="message in step.messages track by $index" in-Yellow>

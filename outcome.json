@@ -1,6 +1,7 @@
 {
     "pipeline": "OUTPUT process for non-direct files with NPrS V1.0",
     "pipelineId": "6EBDDA04C3B14F74AFD5B4FB11A3FB2E",
+    "fileName": "P_SLP_730901_20140901_20140930_00_V2_0000_00000_FILE_NOE_730901_Hoya_Finalauswertungen_09_2014.zip",
     "steps": [
         {
             "order": "0",
@@ -285,7 +286,7 @@
                 "Resolving parameter: nprs_api_url; with value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/;",
                 "Resolving parameter: nprs_api_newfile_pattern; with value: filecommunication/newfile/{0}/{1};",
                 "Doing a 'POST' call with url 'http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/filecommunication/newfile/6EBDDA04C3B14F74AFD5B4FB11A3FB2E/SLP' and json '{*Cuid*:*005716*,*Side*:*Platform*,*FileName*:*\\\\\\\\STP026\\\\Webbyfiles\\\\folders\\\\999049\\\\output\\\\rejected\\\\20140923\\\\P_SLP_730901_20140901_20140930_00_V2_0000_00000_FILE_NOE_730901_Hoya_Finalauswertungen_09_2014.zip*,*CorrelationId*:*F8EBBB015E354332BC798074072DF2E0*}'",
-                "Status code: 200 OKPragma: no-cacheX-UA-Compatible: IE=edgeContent-Length: 0Cache-Control: no-cache,no-cacheDate: Tue, 23 Sep 2014 07:14:54 GMTExpires: -1,-1Server: Microsoft-IIS/7.5X-AspNet-Version: 4.0.30319",
+                "Status code: 200 OK\nPragma: no-cache\nX-UA-Compatible: IE=edge\nContent-Length: 0\nCache-Control: no-cache,no-cache\nDate: Tue, 23 Sep 2014 07:14:54 GMT\nExpires: -1,-1\nServer: Microsoft-IIS/7.5\nX-AspNet-Version: 4.0.30319\n\n\n",
                 "Get execution parameter: nprs_api_workflow_name2; Value: ",
                 "Resolving parameter: file_type_id; with value: SLP;",
                 "Get execution parameter: nprs_api_workflow_name2; Value: ",
@@ -298,7 +299,7 @@
                 "Resolving parameter: nprs_api_url; with value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/;",
                 "Resolving parameter: nprs_api_erroraction_pattern; with value: filecommunication/erroraction/{0}/{1}/{2};",
                 "Doing a 'PUT' call with url 'http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/filecommunication/erroraction/6EBDDA04C3B14F74AFD5B4FB11A3FB2E/SLP/NamingConventionError' and json '{*CorrelationId*:*F8EBBB015E354332BC798074072DF2E0*}'",
-                "Status code: 200 OKPragma: no-cacheX-UA-Compatible: IE=edgeContent-Length: 0Cache-Control: no-cache,no-cacheDate: Tue, 23 Sep 2014 07:14:54 GMTExpires: -1,-1Server: Microsoft-IIS/7.5X-AspNet-Version: 4.0.30319",
+                "Status code: 200 OK\nPragma: no-cache\nX-UA-Compatible: IE=edge\nContent-Length: 0\nCache-Control: no-cache,no-cache\nDate: Tue, 23 Sep 2014 07:14:54 GMT\nExpires: -1,-1\nServer: Microsoft-IIS/7.5\nX-AspNet-Version: 4.0.30319\n\n\n",
                 "Set execution parameter: nprs_api_workflow_name; Value: SLP",
                 "Set execution parameter: out_nprs_api_action_result; Value: True",
                 "Set execution parameter: out_nprs_api_action_url; Value: http://strnpsfrontvipprd.strl.ehc.adp.com/NPrS/api/filecommunication/newfile/6EBDDA04C3B14F74AFD5B4FB11A3FB2E/SLP",
@@ -376,5 +377,5 @@
         }
     ],
     "start": "23/09/2014, 07:15:03:626",
-    "end": ""
+    "end": "23/09/2014, 07:15:08:992"
 }

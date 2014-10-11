@@ -12,6 +12,7 @@ var ReadLines = function(fileName) {
 	var logData = {
 	    pipeline: '',
 	    pipelineId: '',
+	    fileName: '',
 	    steps: [],
 	    rollbackSteps: [],
 	    start: '',

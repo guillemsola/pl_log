@@ -5,17 +5,25 @@ body {
 .highlight {
 	background: #FFFACD;
 }
-
+h1,h2 {
+	text-align: center;
+}
+h2 {
+	font-family: verdana, arial, sans-serif;
+	font-size: 14px;
+}
 #pipeline {
 }
 
 #pipeline .step {
-	background: #88b7d5;
+	background-color: #88b7d5;
+	border-radius: 5px;
 	border: 2px solid #c2e1f5;
 	position: relative;
 	margin: 40px 0 40px 5%;
 	padding: 10px 0;
 	width: 90%;
+	box-shadow: 5px 10px 5px #cccccc;
 }
 
 /* arrow style */
@@ -68,10 +76,25 @@ body {
 	color: black;
 }
 #pipeline .step .running_time {
-	font-size: 12px;
 	margin: 0 20px;
-	/*text-decoration: none;*/
+	font-family: verdana, arial, sans-serif;
 	color: black;
+}
+#pipeline .step .total_progress{
+	width: 90%;
+	height: 8px;
+	border-radius: 5px;
+	background-color: #5d94b7;
+	margin: 0 5% 5px;
+}
+#pipeline .step .total_progress .progress {
+	height: 100%;
+	border-radius: 5px;
+	background-color: #3c7499;
+}
+#pipeline .step .running_time meter
+{
+	width: 100%;
 }
 #pipeline .step a {
 	text-decoration: none;
@@ -98,5 +121,11 @@ body {
 }
 
 #pipeline .step.error {
-	background: #d46666;
+	background-color: #d46666;
+}
+#pipeline .step.error .total_progress{
+	background-color: #ab3838;
+}
+#pipeline .step.error .total_progress .progress{
+	background-color: #801313;
 }
