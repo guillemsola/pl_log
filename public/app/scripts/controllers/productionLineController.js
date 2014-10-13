@@ -1,21 +1,10 @@
-var plLog = angular.module('plLog', []);
+var plLog = angular.module('plLog', ['angularFileUpload']);
 
-plLog.controller('ProductionLineController', function($scope, $http) {
-	/* $scope.greeting = 'Hola!'; */
+plLog.controller('ProductionLineController', function($scope, $http, $upload) {
 	$http.get('/log').
 	success(function(data) {
-		$scope.data = data;
-		$scope.runningTotal = (function xyz() {
-			$scope.data.start = parseDate(data.start);
-			$scope.data.end = parseDate(data.end);
-			return Math.abs($scope.data.end - $scope.data.start);
-
-
-			})();
-		// $scope.data.endCent = percentage($scope.data.end);
-		// $scope.data.startCent = percentage($scope.data.start);
-		$scope.runningTotalCent = 100;
-		});
+		initialize(data);
+	});
 
 	$scope.initializeState = function(step) {
 		var startDate = parseDate(step.start);
@@ -23,6 +12,29 @@ plLog.controller('ProductionLineController', function($scope, $http) {
 		step.runningTimeCent = percentage(Math.abs(endDate - startDate));
 		step.offsetTimeCent = percentage(Math.abs($scope.data.start - startDate));
 	};
+
+	$scope.onFileSelect = function($files) {
+		$upload.upload({
+			url: '/log/upload',
+			method: 'POST',
+			file: $files[0]
+		}).success(function(response, status, headers, config) {
+			initialize(response);
+		}).error(function(response, status, headers, config) {
+			console.log('error!!!!');
+		});
+	}; 
+
+	function initialize(data)
+	{
+		$scope.data = data;
+		$scope.runningTotal = (function xyz() {
+			$scope.data.start = parseDate(data.start);
+			$scope.data.end = parseDate(data.end);
+			return Math.abs($scope.data.end - $scope.data.start);
+		})();
+		$scope.runningTotalCent = 100;
+	}
 
 	function percentage(value) {
 		return ( value * 100) / $scope.runningTotal;
@@ -33,10 +45,3 @@ plLog.controller('ProductionLineController', function($scope, $http) {
 		return new Date(fields[2],fields[1]-1,fields[0],fields[4],fields[5],fields[6],fields[7])
 	};
 });
-/*
-function ProductionLineController($scope, $http) {
-	$http.get('/log').
-        success(function(data) {
-            $scope.data = data;
-        });
-}*/

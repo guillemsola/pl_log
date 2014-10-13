@@ -2,7 +2,9 @@
 <html ng-app="plLog">
 	<head>
 		<title>Production Line Log Reader</title>
+		<script src="app/scripts/lib/angular-file-upload-shim.min.js"></script> 
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+		<script src="app/scripts/lib/angular-file-upload.min.js"></script> 
 		<script src="app/scripts/controllers/productionLineController.js"></script>
 		<script src="app/scripts/filters/highlight.js"></script>	
 		<script src="app/scripts/directives/directives.js"></script>	
@@ -12,6 +14,9 @@
 	<body ng-controller="ProductionLineController">
 		<h1>{{ data.pipeline }}</h1>
 		<h2>{{ data.fileName }}</h2>
+
+		<input type="file" ng-file-select="onFileSelect($files)">
+
 		<!-- <ul> -->
 		<div id="pipeline">
 			<div ng-repeat="step in data.steps track by $index" class="step forward" ng-class="{error: step.hasError, not_last : !$last}" ng-init="initializeState(step)">
@@ -21,7 +26,6 @@
 				<div class="total_progress">
 					<div class="progress" style="width:{{ step.runningTimeCent }}%; margin-left: {{ step.offsetTimeCent }}%"></div>
 				</div>
-				<!-- {{ step.runningTimeCent }} / {{ step.offsetTimeCent }} / {{ runningTotalCent }} -->
 				<div class="log" ng-class="{ 'hidden': ! showDetails}">
 					<ul>
 						<li ng-repeat="message in step.messages track by $index" in-Yellow>

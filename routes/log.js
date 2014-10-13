@@ -11,4 +11,15 @@ router.get('/', function(req, res) {
 	}); 	
 });
 
+router.post('/upload', function (req, res, next) {
+	console.log('Post done:');
+    console.log(req.files.file.path);
+
+var readLog = new Log(req.files.file.path);
+
+	readLog.on('end', function(data) { 
+		res.send(data);
+	});
+});
+
 module.exports = router;

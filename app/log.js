@@ -25,8 +25,6 @@ var ReadLines = function(fileName) {
 		while (index > -1) {
 			var line = remaining.substring(0, index);
 			remaining = remaining.substring(index + 1);
-			// line = line.replace('', '@@@');
-			// debug.write(line);
 			pl.processLine(line, logData);
 			index = remaining.indexOf('\n');
     	}
