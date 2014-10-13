@@ -5,6 +5,16 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# node log
+npm-debug.log
+
+# sample outcom for console test
+outcome.json
+
+# sublime settings
+sublime.sublime-project
+sublime.sublime-workspace
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 tmp

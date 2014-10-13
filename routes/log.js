@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET log . */
 router.get('/', function(req, res) {
-	var readLog = new Log('log.csv');
+	var readLog = new Log('./samples/bpm output SRF with GV ok.csv');
 
 	readLog.on('end', function(data) { 
 		res.send(data);

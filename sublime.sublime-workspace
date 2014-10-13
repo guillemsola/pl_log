@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"co",
+				"console"
+			],
+			[
 				"fon",
 				"font-size"
 			],
@@ -50,10 +54,6 @@
 			[
 				"l",
 				"log"
-			],
-			[
-				"co",
-				"color"
 			],
 			[
 				"h",
@@ -155,17 +155,8 @@
 			"file": "app/log.js",
 			"settings":
 			{
-				"buffer_size": 1088,
+				"buffer_size": 1025,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/logInFile.js",
-			"settings":
-			{
-				"buffer_size": 442,
-				"line_ending": "Windows",
-				"name": "logInFile.js"
 			}
 		},
 		{
@@ -177,42 +168,15 @@
 			}
 		},
 		{
-			"file": "outcome.json",
-			"settings":
-			{
-				"buffer_size": 32425,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "log.txt",
-			"settings":
-			{
-				"buffer_size": 13340,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "log.csv",
-			"settings":
-			{
-				"buffer_size": 64605,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "routes/log.js",
 			"settings":
 			{
-				"buffer_size": 1116,
+				"buffer_size": 509,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "0 info it worked if it ends with ok\n1 verbose cli [ 'C:\\\\Program Files\\\\nodejs\\\\\\\\node.exe',\n1 verbose cli   'C:\\\\Program Files\\\\nodejs\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js',\n1 verbose cli   'start' ]\n2 info using npm@1.4.3\n3 info using node@v0.10.26\n4 verbose node symlink C:\\Program Files\\nodejs\\\\node.exe\n5 verbose run-script [ 'prestart', 'start', 'poststart' ]\n6 info prestart express@0.0.0\n7 info start express@0.0.0\n8 verbose unsafe-perm in lifecycle true\n9 info express@0.0.0 Failed to exec start script\n10 error express@0.0.0 start: `node ./bin/www`\n10 error Exit status 8\n11 error Failed at the express@0.0.0 start script.\n11 error This is most likely a problem with the express package,\n11 error not with npm itself.\n11 error Tell the author that this fails on your system:\n11 error     node ./bin/www\n11 error You can get their info via:\n11 error     npm owner ls express\n11 error There is likely additional logging output above.\n12 error System Windows_NT 6.2.9200\n13 error command \"C:\\\\Program Files\\\\nodejs\\\\\\\\node.exe\" \"C:\\\\Program Files\\\\nodejs\\\\node_modules\\\\npm\\\\bin\\\\npm-cli.js\" \"start\"\n14 error cwd C:\\Users\\guillem\\WorkSpace\\pl_log\n15 error node -v v0.10.26\n16 error npm -v 1.4.3\n17 error code ELIFECYCLE\n18 verbose exit [ 1, true ]\n",
 			"file": "npm-debug.log",
-			"file_size": -1,
-			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 1254,
@@ -223,7 +187,7 @@
 			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 2903,
+				"buffer_size": 2495,
 				"line_ending": "Windows"
 			}
 		},
@@ -247,7 +211,7 @@
 			"file": "public/app/scripts/controllers/productionLineController.js",
 			"settings":
 			{
-				"buffer_size": 1946,
+				"buffer_size": 1323,
 				"line_ending": "Windows"
 			}
 		},
@@ -263,7 +227,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 1652,
+				"buffer_size": 1451,
 				"line_ending": "Unix"
 			}
 		}
@@ -303,6 +267,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/guillem/WorkSpace/pl_log/app/logInFile.js",
+		"/C/Users/guillem/WorkSpace/pl_log/outcome.json",
+		"/C/Users/guillem/WorkSpace/pl_log/log.txt",
+		"/C/Users/guillem/WorkSpace/pl_log/log.csv",
 		"/C/Users/guillem/WorkSpace/pl_log/public/app/scripts/lib/angular-file-upload.min.js",
 		"/C/Users/guillem/WorkSpace/pl_log/public/app/scripts/lib/angular-file-upload-shim.min.js",
 		"/C/Users/guillem/WorkSpace/pl_log/routes/users.js",
@@ -349,6 +317,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"file",
 			"bodyParser",
 			"express",
 			"fileup",
@@ -423,7 +392,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -432,15 +401,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1088,
+						"buffer_size": 1025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								302,
-								302
+								667,
+								667
 							]
 						],
 						"settings":
@@ -458,35 +427,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/logInFile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 442,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								147,
-								147
-							]
-						],
-						"settings":
-						{
-							"auto_name": "logInFile.js",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/parseLog.js",
 					"semi_transient": false,
 					"settings":
@@ -509,115 +449,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 423.0,
+						"translation.y": 694.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "outcome.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 32425,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23792,
-								23792
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7552.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "log.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13340,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3688,
-								3690
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 655.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "log.csv",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 64605,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2618,
-								2884
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": false,
-							"wrap_width": 80
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 2,
 					"file": "routes/log.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1116,
+						"buffer_size": 509,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								701,
-								701
+								34,
+								34
 							]
 						],
 						"settings":
@@ -625,14 +477,14 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 248.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 3,
 					"file": "npm-debug.log",
 					"semi_transient": false,
 					"settings":
@@ -660,20 +512,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 4,
 					"file": "public/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2903,
+						"buffer_size": 2495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								305,
-								305
+								1349,
+								1349
 							]
 						],
 						"settings":
@@ -685,11 +537,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 5,
 					"file": "public/app/scripts/directives/directives.js",
 					"semi_transient": false,
 					"settings":
@@ -715,11 +567,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 6,
 					"file": "public/css/pipeline.css",
 					"semi_transient": false,
 					"settings":
@@ -744,24 +596,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 7,
 					"file": "public/app/scripts/controllers/productionLineController.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1946,
+						"buffer_size": 1323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								755,
-								755
+								60,
+								60
 							]
 						],
 						"settings":
@@ -770,14 +622,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 8,
 					"file": "public/app/scripts/filters/highlight.js",
 					"semi_transient": false,
 					"settings":
@@ -803,24 +655,24 @@
 						"translation.y": 351.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 9,
 					"file": "app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1652,
+						"buffer_size": 1451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								735,
-								735
+								179,
+								179
 							]
 						],
 						"settings":
