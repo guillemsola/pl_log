@@ -19,11 +19,16 @@ plLog.controller('ProductionLineController', function($scope, $http, $upload) {
 			method: 'POST',
 			file: $files[0]
 		}).success(function(response, status, headers, config) {
+			$scope.data = [];
 			initialize(response);
 		}).error(function(response, status, headers, config) {
 			console.log('error!!!!');
 		});
-	}; 
+	};
+	
+	$scope.cleanScreen = function() {
+		$scope.data = [];
+	}
 
 	function initialize(data)
 	{

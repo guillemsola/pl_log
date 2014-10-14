@@ -16,7 +16,7 @@
 		<h2>{{ data.fileName }}</h2>
 
 		<input type="file" ng-file-select="onFileSelect($files)">
-
+		<button ng-click="cleanScreen()">Clean log</button>
 		<!-- <ul> -->
 		<div id="pipeline">
 			<div ng-repeat="step in data.steps track by $index" class="step forward" ng-class="{error: step.hasError, not_last : !$last}" ng-init="initializeState(step)">
