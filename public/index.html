@@ -19,12 +19,14 @@
 
 		<!-- <ul> -->
 		<div id="pipeline">
-			<div ng-repeat="step in data.steps track by $index" class="step forward" ng-class="{error: step.hasError, not_last : !$last}" ng-init="initializeState(step)">
+			<div ng-repeat="step in data.steps track by step.id + $index" class="step forward" ng-class="{error: step.hasError, not_last : !$last}" ng-init="initializeState(step)">
 			<a href="javascript:void(0);" ng-click="showDetails = ! showDetails">
 			<!-- <div class="floater"> -->
 				<div class="command">{{ step.command }}</div>
 				<div class="total_progress">
 					<div class="progress" style="width:{{ step.runningTimeCent }}%; margin-left: {{ step.offsetTimeCent }}%"></div>
+					<!-- <div>running: {{ step.runningTimeCent }} offset: {{ step.offsetTimeCent }} off {{ runningTotal }}</div> -->
+					<div>start: {{ step.time }} end: {{ step.time }}</div>
 				</div>
 				<div class="log" ng-class="{ 'hidden': ! showDetails}">
 					<ul>
@@ -37,7 +39,7 @@
 			<!-- </div> -->
 			</div>
 			<!-- Rollback -->
-			<div ng-repeat="step in data.rollbackSteps track by $index" class="step rollback not_last" ng-class="{error: step.hasError}" ng-init="initializeState(step)">
+			<div ng-repeat="step in data.rollbackSteps track by step.id + $index" class="step rollback not_last" ng-class="{error: step.hasError}" ng-init="initializeState(step)">
 			<a href="javascript:void(0);" ng-click="showDetails = ! showDetails">
 			<!-- <div class="floater"> -->
 				<div class="command">{{ step.command }}</div>

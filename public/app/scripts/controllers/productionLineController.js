@@ -7,8 +7,10 @@ plLog.controller('ProductionLineController', function($scope, $http, $upload) {
 	});
 
 	$scope.initializeState = function(step) {
+		console.log("step" + step.order);
 		var startDate = parseDate(step.start);
 		var endDate = parseDate(step.end);
+		step.time = endDate - startDate;
 		step.runningTimeCent = percentage(Math.abs(endDate - startDate));
 		step.offsetTimeCent = percentage(Math.abs($scope.data.start - startDate));
 	};
@@ -19,6 +21,7 @@ plLog.controller('ProductionLineController', function($scope, $http, $upload) {
 			method: 'POST',
 			file: $files[0]
 		}).success(function(response, status, headers, config) {
+			$scope.data = [];
 			initialize(response);
 		}).error(function(response, status, headers, config) {
 			console.log('error!!!!');
@@ -28,11 +31,19 @@ plLog.controller('ProductionLineController', function($scope, $http, $upload) {
 	function initialize(data)
 	{
 		$scope.data = data;
-		$scope.runningTotal = (function xyz() {
+$scope.runningTotal = 0;
+		(function xyz() {
 			$scope.data.start = parseDate(data.start);
-			$scope.data.end = parseDate(data.end);
-			return Math.abs($scope.data.end - $scope.data.start);
+			//$scope.data.end = parseDate(data.end);
+			//return Math.abs($scope.data.end - $scope.data.start);
+			$scope.data.steps.forEach(function(step) {
+				startDate = parseDate(step.start);
+				endDate = parseDate(step.end);
+				$scope.runningTotal += endDate - startDate;
+				console.log($scope.runningTotal + " loop: " + (endDate - startDate));
+			});
 		})();
+		console.log($scope.runningTotal);
 		$scope.runningTotalCent = 100;
 	}
 

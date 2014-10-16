@@ -4,7 +4,7 @@ var debug = require('./infrastructure/debug');
 
 debug.write('Start!');
 
-var readLog = new Log('log.csv');
+var readLog = new Log('./samples/spm input Sif rejected in SPM.csv');
 //readLog = new Log('log.csv');
 
 //readLog = new Log('log.csv');
