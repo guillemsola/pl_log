@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"end",
+				"endDate"
+			],
+			[
+				"en",
+				"endDate"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
 				"co",
 				"console"
 			],
@@ -163,23 +175,39 @@
 			"file": "app/parseLog.js",
 			"settings":
 			{
-				"buffer_size": 3687,
+				"buffer_size": 3887,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "samples/spm input Sif rejected in SPM.csv",
+			"settings":
+			{
+				"buffer_size": 237619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/logInFile.js",
+			"settings":
+			{
+				"buffer_size": 478,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "outcome.json",
+			"settings":
+			{
+				"buffer_size": 114742,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "routes/log.js",
 			"settings":
 			{
-				"buffer_size": 509,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "npm-debug.log",
-			"settings":
-			{
-				"buffer_size": 1254,
+				"buffer_size": 541,
 				"line_ending": "Windows"
 			}
 		},
@@ -187,7 +215,7 @@
 			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 2495,
+				"buffer_size": 2693,
 				"line_ending": "Windows"
 			}
 		},
@@ -211,7 +239,7 @@
 			"file": "public/app/scripts/controllers/productionLineController.js",
 			"settings":
 			{
-				"buffer_size": 1323,
+				"buffer_size": 1707,
 				"line_ending": "Windows"
 			}
 		},
@@ -267,6 +295,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/guillem/WorkSpace/pl_log/npm-debug.log",
 		"/C/Users/guillem/WorkSpace/pl_log/app/logInFile.js",
 		"/C/Users/guillem/WorkSpace/pl_log/outcome.json",
 		"/C/Users/guillem/WorkSpace/pl_log/log.txt",
@@ -317,6 +346,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"runningTotal",
+			"$scope.data.end",
+			"$scope.data.start",
+			"data.start",
+			"data.end",
+			"\"id\":",
+			"id",
+			"pause",
+			"Close Log Session in thread",
+			"has been executed with status",
+			"data.end",
+			".end",
+			"Begin execution pipeline",
+			"data.start",
+			"Pausing execution",
 			"file",
 			"bodyParser",
 			"express",
@@ -392,7 +436,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -422,7 +466,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -431,15 +475,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3687,
+						"buffer_size": 3887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								422,
-								422
+								1611,
+								1611
 							]
 						],
 						"settings":
@@ -449,55 +493,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 694.0,
+						"translation.y": 1111.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "routes/log.js",
+					"file": "samples/spm input Sif rejected in SPM.csv",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 509,
+						"buffer_size": 237619,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34,
-								34
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "npm-debug.log",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1254,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								402,
+								462
 							]
 						],
 						"settings":
@@ -508,24 +524,110 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "public/index.html",
+					"buffer": 3,
+					"file": "app/logInFile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2495,
+						"buffer_size": 478,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1349,
-								1349
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "outcome.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 114742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96198,
+								96203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 31805.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "routes/log.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								932,
+								932
 							]
 						],
 						"settings":
@@ -534,14 +636,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "public/app/scripts/directives/directives.js",
 					"semi_transient": false,
 					"settings":
@@ -567,11 +669,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "public/css/pipeline.css",
 					"semi_transient": false,
 					"settings":
@@ -596,24 +698,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "public/app/scripts/controllers/productionLineController.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1323,
+						"buffer_size": 1707,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								60,
-								60
+								956,
+								956
 							]
 						],
 						"settings":
@@ -622,14 +724,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 657.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "public/app/scripts/filters/highlight.js",
 					"semi_transient": false,
 					"settings":
@@ -655,11 +757,11 @@
 						"translation.y": 351.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "app.js",
 					"semi_transient": false,
 					"settings":
@@ -685,7 +787,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]

@@ -40,7 +40,10 @@ function processLine(line, data) {
         return;
     }
 
-    if( /Begin execution pipeline.*/.test(entry.message)) {
+    // TODO : Pausing execution for pipeline
+    // TODO : Begin pipeline reprocess
+
+    if( data.start === "" && /Begin execution pipeline.*/.test(entry.message)) {
         debug.write('Detected pipeline');
     	data.pipelineId = entry.message.split( /([0-9A-F]{32})/ )[1];
     	data.pipeline = entry.message.split( /from type: (.*);$/ )[1];
@@ -52,6 +55,7 @@ function processLine(line, data) {
         currentStep = new Step();
         currentStep.start = entry.time;
         currentStep.order = entry.message.split( /with order: ([0-9]*)$/)[1];
+        currentStep.id = entry.message.split(/(?:^>> Begin execution step: )([0-9A-F]{32})/)[1];
         // TODO get step number order
     }
     else if( /End step \d+ execution.*/.test(entry.message)) {
@@ -95,7 +99,7 @@ function processLine(line, data) {
         data.fileName = entry.message.split( /(?:^Resolving parameter: file_name; with value: )(.*)(?:;)/ )[1]
         debug.write("Detected file name: " + data.fileName);
     }
-    else if( /.*has been executed with status.*/.test(entry.message)) {
+    else if( /^Close Log Session in thread.*/.test(entry.message)) {
         data.end = entry.time;
     }
 }
