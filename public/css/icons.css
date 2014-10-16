@@ -1,0 +1,136 @@
+menu {
+  /* @size sets the relative size of the buttons, define before calling the buttons mixin */
+  /* Pause */
+  margin: 2em auto;
+  text-align: center;
+  position: relative;
+}
+menu button {
+  position: relative;
+  display: inline-block;
+  padding: .6em;
+  background: linear-gradient(#ffffff, #cccccc), #c9c5c9;
+  border-radius: 10em;
+  border: 0 solid #d0d0d0;
+  width: 8em;
+  height: 8em;
+  margin-right: 20px;
+  box-shadow: 0 0.48em 0.56em rgba(0, 0, 0, 0.4);
+}
+menu button:hover {
+  background: linear-gradient(#f5f5f5, #b9b9b9), #c9c5c9;
+}
+menu button:before,
+menu button:after {
+  position: absolute;
+  content: " ";
+}
+menu button:active {
+  top: 0.64em;
+  box-shadow: 0 0.16em 0.24em rgba(0, 0, 0, 0.4);
+}
+menu .pause:before,
+menu .pause:after {
+  height: 3.76em;
+  width: 1.52em;
+  left: 2.32em;
+  top: 2.24em;
+  display: block;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+menu .pause:after {
+  left: 4.32em;
+}
+menu .pause:hover:before,
+menu .pause:hover:after {
+  background-color: rgba(36, 36, 36, 0.8);
+}
+menu.medium {
+  /* Pause */
+}
+menu.medium button {
+  position: relative;
+  display: inline-block;
+  padding: .6em;
+  background: linear-gradient(#ffffff, #cccccc), #c9c5c9;
+  border-radius: 10em;
+  border: 0 solid #d0d0d0;
+  width: 5em;
+  height: 5em;
+  margin-right: 20px;
+  box-shadow: 0 0.3em 0.35000000000000003em rgba(0, 0, 0, 0.4);
+}
+menu.medium button:hover {
+  background: linear-gradient(#f5f5f5, #b9b9b9), #c9c5c9;
+}
+menu.medium button:before,
+menu.medium button:after {
+  position: absolute;
+  content: " ";
+}
+menu.medium button:active {
+  top: 0.4em;
+  box-shadow: 0 0.1em 0.15em rgba(0, 0, 0, 0.4);
+}
+menu.medium .pause:before,
+menu.medium .pause:after {
+  height: 2.3499999999999996em;
+  width: 0.95em;
+  left: 1.45em;
+  top: 1.4000000000000001em;
+  display: block;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+menu.medium .pause:after {
+  left: 2.7em;
+}
+menu.medium .pause:hover:before,
+menu.medium .pause:hover:after {
+  background-color: rgba(36, 36, 36, 0.8);
+}
+menu.small {
+  /* Pause */
+}
+menu.small button {
+  position: relative;
+  display: inline-block;
+  padding: .6em;
+  background: linear-gradient(#ffffff, #cccccc), #c9c5c9;
+  border-radius: 10em;
+  border: 0 solid #d0d0d0;
+  width: 3em;
+  height: 3em;
+  margin-right: 20px;
+  box-shadow: 0 0.18em 0.21000000000000002em rgba(0, 0, 0, 0.4);
+}
+menu.small button:hover {
+  background: linear-gradient(#f5f5f5, #b9b9b9), #c9c5c9;
+}
+menu.small button:before,
+menu.small button:after {
+  position: absolute;
+  content: " ";
+}
+menu.small button:active {
+  top: 0.24em;
+  box-shadow: 0 0.06em 0.09em rgba(0, 0, 0, 0.4);
+}
+menu.small .pause:before,
+menu.small .pause:after {
+  height: 1.41em;
+  width: 0.5700000000000001em;
+  left: 0.8699999999999999em;
+  top: 0.8400000000000001em;
+  display: block;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+menu.small .pause:after {
+  left: 1.62em;
+}
+menu.small .pause:hover:before,
+menu.small .pause:hover:after {
+  background-color: rgba(36, 36, 36, 0.8);
+}
+/*
+The buttons mixin that defines the buttons styles, the @size must be defined to set the relative size
+*/
