@@ -8,6 +8,7 @@ function Step(order) {
 	this.start = '',
 	this.end = '',
     this.hasError = false,
+    this.pause = false,
 
 	this.addLog = function (message) {
 		this.messages.push(message);
@@ -16,6 +17,7 @@ function Step(order) {
 
 var currentStep;
 var partialLine = '';
+var pause = false;
 
 function processLine(line, data) {
     if(partialLine !== '') {
@@ -40,14 +42,20 @@ function processLine(line, data) {
         return;
     }
 
-    // TODO : Pausing execution for pipeline
-    // TODO : Begin pipeline reprocess
+    if( /Pausing execution for pipeline.*/.test(entry.message) ) {
+        pause = true;
+        data.steps[data.steps.length-1].pause = true;
+        debug.write('Pause Detected.')
+    }
+    else if( /Reprocess with resolved pipeline.*/.test(entry.message) ) {
+        pause = false;
+    }
 
     if( data.start === "" && /Begin execution pipeline.*/.test(entry.message)) {
         debug.write('Detected pipeline');
-    	data.pipelineId = entry.message.split( /([0-9A-F]{32})/ )[1];
-    	data.pipeline = entry.message.split( /from type: (.*);$/ )[1];
-    	data.start = entry.time;
+        data.pipelineId = entry.message.split( /([0-9A-F]{32})/ )[1];
+        data.pipeline = entry.message.split( /from type: (.*);$/ )[1];
+        data.start = entry.time;
     }
     
     else if( /Begin execution step.*/.test(entry.message)) {
@@ -77,7 +85,7 @@ function processLine(line, data) {
         debug.write('Skipping header');
     }
     else if( /Begin rollback.*/.test(entry.message)) {
-        debug.write('Detected rollback steps');
+        debug.write('Detected rollback steps.');
         currentStep = new Step();
         currentStep.start = entry.time;
         currentStep.order = entry.message.split( /Order: ([0-9]*)$/)[1];
@@ -90,7 +98,12 @@ function processLine(line, data) {
         };  
     }
     else if(currentStep !== undefined) {
-        currentStep.addLog(entry.message)
+        if(pause) {
+            data.steps[data.steps.length-1].addLog(entry.message);
+        }
+        else {
+            currentStep.addLog(entry.message);
+        }
     };
     
     // Once in a pipe message

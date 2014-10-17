@@ -10,6 +10,7 @@
 		<script src="app/scripts/directives/directives.js"></script>	
 		<script src="app/scripts/lib/moment.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/pipeline.css">
+		<link rel="stylesheet" type="text/css" href="css/icons.css">
 	</head>
 	<body ng-controller="ProductionLineController">
 		<h1>{{ data.pipeline }}</h1>
@@ -33,6 +34,12 @@
 						</ul>
 					</div>
 				</a>
+				<!-- <div ng-show="step.pause" class="pause-alt"></div> -->
+				<!-- <a class="pause icon" title="Pause" href="#"></a> -->
+<menu class="medium">
+  <button class="pause"></button>
+</menu>
+				<!-- <ul><li class="pause"><a href="#non">Play</a></li></ul> -->
 			</div>
 			<!-- Rollback -->
 			<div ng-repeat="step in data.rollbackSteps track by step.id + $index" class="step rollback not_last" ng-class="{error: step.hasError}" ng-init="initializeState(step)">
