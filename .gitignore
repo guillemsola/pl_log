@@ -17,7 +17,7 @@ sublime.sublime-workspace
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-tmp
+tmp/*
 
 # Windows Installer files
 *.cab
@@ -38,7 +38,8 @@ tmp
 
 # Icon must end with two \r
 Icon
-
+
+
 
 # Thumbnails
 ._*

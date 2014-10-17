@@ -17,7 +17,7 @@ router.post('/upload', function (req, res, next) {
 
 var readLog = new Log(req.files.file.path);
 
-	readLog.on('end', function(data) { 
+	readLog.on('end', function(data) {
 		res.send(data);
 	});
 });
