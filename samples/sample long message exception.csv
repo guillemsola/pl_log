@@ -1,0 +1,38 @@
+"TIME";"DSC_ERROR_LEVEL";"MESSAGE";"DETAILS_ERROR";"DSC_ERROR_TYPE";"GUID_PROCESS_EXECUTION";"GUID_PROCESS_ERROR"
+"17/10/2014, 10:23:01:928";"Debug";"Begin execution pipeline: 9181181E3C954DF6AF60CA400A4C5F95; from type: INPUT process for an SIF file through LGP;";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"6D9B0EF7EF8642AA8A14A3C700CC143A"
+"17/10/2014, 10:23:05:093";"Info";">> Begin execution step: A55FBE02200840AE9952A3C700CC126A; with order: 5";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"9F904BCF6C48437EA2FBA3C700CC17ED"
+"17/10/2014, 10:23:05:114";"Debug";"Command: 20C0B48258454F3B9B0E0486BFDFAF49; Name: Manage Locked Channel Command";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"3AFE31FAEDE348859DEAA3C700CC17F6"
+"17/10/2014, 10:23:05:124";"Debug";"Registering parameters for step A55FBE02200840AE9952A3C700CC126A";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"C36FAA575AD7472AB9F8A3C700CC17F6"
+"17/10/2014, 10:23:05:133";"Trace";"Set default parameter: pipeline_id; with value: 9181181E3C954DF6AF60CA400A4C5F95";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"D3BB6336AE104C51B327A3C700CC17FB"
+"17/10/2014, 10:23:05:142";"Trace";"Set default parameter: tid; with value: 010255";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"D3EB689336C944F7AE9AA3C700CC17FB"
+"17/10/2014, 10:23:05:165";"Trace";"Set default parameter: side; with value: Client";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"690C8C7CDD424135AF90A3C700CC1804"
+"17/10/2014, 10:23:05:176";"Trace";"Set default parameter: file_id; with value: 1696B1E514CC4B1AB031F6380A2DC352";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"7166906FB76C43AFAD72A3C700CC1809"
+"17/10/2014, 10:23:05:182";"Trace";"Set default parameter: file_path; with value: \\ind021\NPRSin\{6497ec54b333431da47fc0e9ab4ea80b}";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"3410CAEEEBC84FDC9F1EA3C700CC1809"
+"17/10/2014, 10:23:05:192";"Trace";"Set default parameter: file_name; with value: EP2_010255_20141017_102257_FR003814_000000_0000SIF_00006_FILE_SIFsignOffV1.txt";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"1CD9BBF3B9A74DBD948AA3C700CC180E"
+"17/10/2014, 10:23:05:205";"Trace";"Set default parameter: file_type_id; with value: SIF";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"E73F653C20FE4B38A137A3C700CC180E"
+"17/10/2014, 10:23:05:214";"Trace";"Set default parameter: container_type_id; with value: FILE";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"2AFEFCD2F4A04738B1DFA3C700CC1812"
+"17/10/2014, 10:23:05:229";"Trace";"Set default parameter: transmission_mode; with value: 1";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"626635B00CF541EAA1B6A3C700CC1817"
+"17/10/2014, 10:23:05:249";"Trace";"Resolving parameter: file_name; with value: EP2_010255_20141017_102257_FR003814_000000_0000SIF_00006_FILE_SIFsignOffV1.txt;";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"BCD601B2465F4F7AB4CEA3C700CC181C"
+"17/10/2014, 10:23:05:260";"Trace";"Resolving parameter: file_path; with value: \\ind021\NPRSin\{6497ec54b333431da47fc0e9ab4ea80b};";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"25B98702C13244968CFEA3C700CC1820"
+"17/10/2014, 10:23:05:265";"Trace";"Resolving parameter: file_type_id; with value: SIF;";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"C2816B9EB3774282AE49A3C700CC1820"
+"17/10/2014, 10:23:05:289";"Trace";"Get execution parameter: file_status; Value: 4";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"E9940FB942DA4950826CA3C700CC182A"
+"17/10/2014, 10:23:05:297";"Trace";"Resolving execution parameter: file_status; with value: 4;";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"DECE862D545347608272A3C700CC182A"
+"17/10/2014, 10:23:05:328";"Trace";"Get execution parameter: cfnc_cuid; Value: 003814";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"0FBB002286F0429F8339A3C700CC1833"
+"17/10/2014, 10:23:05:339";"Trace";"Get execution parameter: cfnc_paygroup; Value: 0000";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"BDAD2B444675420FA998A3C700CC1838"
+"17/10/2014, 10:23:05:348";"Trace";"Get execution parameter: file_status; Value: 4";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"C1E3A06FC209430C8EC7A3C700CC183C"
+"17/10/2014, 10:23:05:360";"Trace";"Resolving parameter: tid; with value: 010255;";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"701CF2B755F345869B7BA3C700CC183C"
+"17/10/2014, 10:23:05:391";"Trace";"Resolving parameter: reports_folder_mask; with value: \\ind048\Webbyfiles\folders\00{0}\REPORTS;";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"2F825BD6C9BB4089AF47A3C700CC1846"
+"17/10/2014, 10:23:05:434";"Error";"Logon failure: unknown user name or bad password.
+";"Exception: System.IO.IOException 
+Exception Message: Logon failure: unknown user name or bad password.
+ 
+Exception Source: mscorlib 
+Exception Stack:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.Directory.InternalCreateDirectory(String fullPath, String path, DirectorySecurity dirSecurity)
+   at System.IO.Directory.CreateDirectory(String path, DirectorySecurity directorySecurity)
+   at Adp.Streamline.ProductionLine.Domain.Commands.ManageLockedChannelCommand.LockPath()
+   at Adp.Streamline.ProductionLine.Domain.Commands.ManageLockedChannelCommand.Execute() 
+========================================
+";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"813BC6FB959244598596A3C700CC1854"
+"17/10/2014, 10:23:05:446";"Debug";"Calling send alert for generator Adp.Streamline.ProductionLine.Domain.ManageLockedChannelCommandEvents for 0 event(s) and 0 parameter(s)";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"EDFC4DD537AA4AEF8440A3C700CC1859"
+"17/10/2014, 10:23:05:456";"Info";"End step 5 execution successfully";"";"Technical";"9181181E3C954DF6AF60CA400A4C5F95";"5799669402CE4399ABA8A3C700CC185D"

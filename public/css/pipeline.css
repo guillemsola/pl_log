@@ -122,6 +122,13 @@ h2 {
 
 #pipeline .step.error {
 	background-color: #d46666;
+	border-color: #ab3838;
+}
+#pipeline .step.forward.error.not_last::after {
+	border-top-color: #d46666;
+}
+#pipeline .step.forward.error.not_last::before {
+	border-top-color: #ab3838;;
 }
 #pipeline .step.error .total_progress{
 	background-color: #ab3838;

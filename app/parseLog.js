@@ -19,7 +19,7 @@ var partialLine = '';
 
 function processLine(line, data) {
     if(partialLine !== '') {
-        line += ' ' + partialLine;
+        line = partialLine + line;
     }
     var fields = escape(line).split( /"([\s\S]*?)";?/g );
 
@@ -102,6 +102,17 @@ function processLine(line, data) {
     else if( /^Close Log Session in thread.*/.test(entry.message)) {
         data.end = entry.time;
     }
+
+	// capture exceptions column
+	if(entry.details !== ' ' && entry.details !== 'DETAILS_ERROR') {
+		currentStep.addLog(entry.details);
+	}
+	
+	if ( entry.level === 'Error' )
+	{
+		debug.write('Detected step with warning.')
+		currentStep.hasError = true;
+	}
 }
 
 // TODO is that needed?

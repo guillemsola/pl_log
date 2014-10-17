@@ -4,7 +4,8 @@ var debug = require('./infrastructure/debug');
 
 debug.write('Start!');
 
-var readLog = new Log('./samples/spm input Sif rejected in SPM.csv');
+//var readLog = new Log('./samples/bpm input Sif with missing UHRA connector.csv');
+var readLog = new Log('./samples/sample long message exception.csv');
 //readLog = new Log('log.csv');
 
 //readLog = new Log('log.csv');
