@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
-app.use(multipart({ uploadDir: './tmp/' }));
+app.use(multipart({ uploadDir: path.join(__dirname, 'tmp') }));
 app.use(cookieParser());
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
