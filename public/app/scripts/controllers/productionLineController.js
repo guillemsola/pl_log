@@ -1,10 +1,10 @@
 var plLog = angular.module('plLog', ['angularFileUpload']);
 
 plLog.controller('ProductionLineController', function($scope, $http, $upload) {
-	// $http.get('/log').
-	// success(function(data) {
-	// 	initialize(data);
-	// });
+	$http.get('/log').
+	success(function(data) {
+		initialize(data);
+	});
 
 	$scope.initializeState = function(step) {
 		step.lenghtCent = percentage(step.lenght);

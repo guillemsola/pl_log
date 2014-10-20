@@ -2,7 +2,6 @@ var fs = require('fs');
 var EventEmitter = require('events').EventEmitter;
 var util = require('util');
 var pl = require('./parseLog');
-var debug = require('./infrastructure/debug');
 
 var ReadLines = function(fileName) {
 	var input = fs.createReadStream(fileName);
@@ -34,11 +33,6 @@ var ReadLines = function(fileName) {
 		if(remaining.length > 0) {
 			pl.processLine(remaining, logData);
 		}
-
-		fs.unlink(fileName, function (err) {
-			if (err) throw err;
-			console.log('successfully deleted ' + fileName);
-		});
 
 		self.emit('end', logData);
 	});

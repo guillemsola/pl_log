@@ -10,6 +10,9 @@ var log = require('./routes/log');
 
 var app = express();
 
+// global
+baseDir = __dirname;
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
